@@ -4,50 +4,173 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ActiveMq.Enum;
 using Apache.NMS.ActiveMQ;
 
 namespace ActiveMq
 {
-    public class ActiveMqConsumer
+    public class ActiveMqConsumer:IActiveMqConsumer
     {
+        //private string URI;
+        //private string TOPIC;
+        private string USERNAME;
+        private string PASSWORD;
+        private IConnectionFactory factory;
+        private IConnection connection;
+        private ISession session;
+        private IMessageProducer producer;
+        public string uri
+        {
+            set; get;
+        }
+
+        public string topic
+        {
+            set; get;
+        }
+
+        public string username
+        {
+            set { USERNAME = value; }
+        }
+
+        public string password
+        {
+            set { PASSWORD = value; }
+
+        }
+
+        public void consumer_listener(IMessage message)
+        {
+            consumer_listener( message, MessageType.Text);
+
+
+        }
+
+        public void consumer_listener(IMessage message,MessageType messageType)
+        {
+            string strMsg;
+
+           
+                if (messageType.Equals(MessageType.Text))
+                {
+                    ITextMessage msg = (ITextMessage) message;
+                    strMsg = msg.Text;
+                }
+                else
+                {
+                    IBytesMessage msg = (IBytesMessage) message;
+                    strMsg = Encoding.Default.GetString(msg.Content);
+                }
+
+             
+                Console.Write(strMsg);
+
+           
+          
+        }
+
         public ActiveMqConsumer()
         {
-            try
+            producer = null;
+            factory = null;
+            connection = null;
+            session = null;
+            //try
+            //{
+            //    //Create the Connection factory   
+            //    IConnectionFactory factory = new ConnectionFactory("tcp://localhost:61616/");
+            //    //Create the connection   
+            //    using (IConnection connection = factory.CreateConnection())
+            //    {
+            //        connection.ClientId = "testing listener";
+            //        connection.Start();
+            //        //Create the Session   
+            //        using (ISession session = connection.CreateSession())
+            //        {
+            //            //Create the Consumer   
+            //            IMessageConsumer consumer = session.CreateDurableConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQTopic("testing"), "testing listener", null, false);
+            //            consumer.Listener += new MessageListener(consumer_Listener);
+            //            Console.ReadLine();
+            //        }
+            //        connection.Stop();
+            //        connection.Close();
+            //    }
+            //}
+            //catch (System.Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+        }
+
+
+        ~ActiveMqConsumer()
+        {
+              producer = null;
+            factory = null;
+            connection = null;
+            session = null;
+        }
+
+     
+
+        public IMessageConsumer CreateConsumer(TopicType topicType, string strTopicName)
+        {
+            if (topicType.Equals(TopicType.Topic))
             {
-                //Create the Connection factory   
-                IConnectionFactory factory = new ConnectionFactory("tcp://localhost:61616/");
-                //Create the connection   
-                using (IConnection connection = factory.CreateConnection())
-                {
-                    connection.ClientId = "testing listener";
-                    connection.Start();
-                    //Create the Session   
-                    using (ISession session = connection.CreateSession())
-                    {
-                        //Create the Consumer   
-                        IMessageConsumer consumer = session.CreateDurableConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQTopic("testing"), "testing listener", null, false);
-                        consumer.Listener += new MessageListener(consumer_Listener);
-                        Console.ReadLine();
-                    }
-                    connection.Stop();
-                    connection.Close();
-                }
+                return session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQTopic(strTopicName));
             }
-            catch (System.Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                return session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQQueue(strTopicName));
             }
         }
-        static void consumer_Listener(IMessage message)
+
+        public IMessageConsumer CreateConsumer(TopicType topicType, string strTopicName, string strSelector)
         {
-            try
+            if (strSelector == "")
             {
-                ITextMessage msg = (ITextMessage)message;
-                Console.WriteLine("Receive: " + msg.Text);
+                Console.WriteLine("MQ selector不能为空");
+                return null;
             }
-            catch (System.Exception e)
+
+            if (topicType.Equals(TopicType.Topic))
             {
-                Console.WriteLine(e.Message);
+                return session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQTopic(strTopicName), strSelector, false);
+            }
+            else
+            {
+                return session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQQueue(strTopicName), strSelector, false);
+            }
+          
+        }
+
+        public void Start()
+        {
+            factory = new ConnectionFactory(uri);
+
+            if (USERNAME != "")
+            {
+                connection = factory.CreateConnection(USERNAME, PASSWORD);
+            }
+            else
+            {
+                connection = factory.CreateConnection();
+            }
+            connection.Start();
+            session = connection.CreateSession();
+        }
+
+        public void Close()
+        {
+            if (session != null)
+            {
+                session.Close();
+            }
+            if (connection != null)
+            {
+                connection.Stop();
+                connection.Close();
             }
         }
     }

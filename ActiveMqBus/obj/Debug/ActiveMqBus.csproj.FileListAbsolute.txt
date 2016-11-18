@@ -3,3 +3,12 @@ D:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMqBus.exe
 D:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMqBus.pdb
 D:\users\wanglin36\ActiveMqBus\ActiveMqBus\obj\Debug\ActiveMqBus.exe
 D:\users\wanglin36\ActiveMqBus\ActiveMqBus\obj\Debug\ActiveMqBus.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\obj\Debug\ActiveMqBus.csprojResolveAssemblyReference.cache
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMq.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.ActiveMQ.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMq.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.xml
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.ActiveMQ.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\Apache.NMS.ActiveMQ.xml

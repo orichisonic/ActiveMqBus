@@ -49,8 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveMqConsumer.cs" />
-    <Compile Include="ActiveMqFactory.cs" />
     <Compile Include="ActiveMqProducter.cs" />
+    <Compile Include="Entity\Property.cs" />
+    <Compile Include="Enum\TopicType.cs" />
+    <Compile Include="Enum\MessageType.cs" />
+    <Compile Include="IActiveMqConsumer.cs" />
+    <Compile Include="IActiveMqProducter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

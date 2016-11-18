@@ -6,6 +6,5 @@ D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.pdb
 D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.xml
 D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.ActiveMQ.pdb
 D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.ActiveMQ.xml
-D:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.csprojResolveAssemblyReference.cache
 D:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.dll
 D:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.pdb
