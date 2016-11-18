@@ -1,0 +1,5 @@
+D:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMqBus.exe.config
+D:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMqBus.exe
+D:\users\wanglin36\ActiveMqBus\ActiveMqBus\bin\Debug\ActiveMqBus.pdb
+D:\users\wanglin36\ActiveMqBus\ActiveMqBus\obj\Debug\ActiveMqBus.exe
+D:\users\wanglin36\ActiveMqBus\ActiveMqBus\obj\Debug\ActiveMqBus.pdb
