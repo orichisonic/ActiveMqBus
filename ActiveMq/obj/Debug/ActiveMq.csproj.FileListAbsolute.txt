@@ -8,3 +8,4 @@ D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.ActiveMQ.pdb
 D:\users\wanglin36\ActiveMqBus\ActiveMq\bin\Debug\Apache.NMS.ActiveMQ.xml
 D:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.dll
 D:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMq\obj\Debug\ActiveMq.csprojResolveAssemblyReference.cache

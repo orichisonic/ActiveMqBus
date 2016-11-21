@@ -18,6 +18,6 @@ namespace ActiveMq
 
         void Close();
 
-        void consumer_listener(IMessage message, MessageType messageType);
+        void consumer_listener(IMessage message);
     }
 }

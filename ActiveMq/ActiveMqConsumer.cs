@@ -19,6 +19,7 @@ namespace ActiveMq
         private IConnection connection;
         private ISession session;
         private IMessageProducer producer;
+        protected MessageType messageType;
         public string uri
         {
             set; get;
@@ -37,18 +38,26 @@ namespace ActiveMq
         public string password
         {
             set { PASSWORD = value; }
-
         }
+
+
+
+        public void SetMessageType(MessageType messageType)
+        {
+            messageType = messageType;
+        }
+
+        //{
+        //    get;set;
+
+
+        //}
 
         public void consumer_listener(IMessage message)
         {
-            consumer_listener( message, MessageType.Text);
+            
 
-
-        }
-
-        public void consumer_listener(IMessage message,MessageType messageType)
-        {
+       
             string strMsg;
 
            

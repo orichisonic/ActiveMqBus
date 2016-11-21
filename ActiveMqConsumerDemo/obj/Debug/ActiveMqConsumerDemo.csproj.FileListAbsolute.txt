@@ -1,0 +1,17 @@
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\ActiveMqConsumerDemo.exe.config
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\ActiveMqConsumerDemo.exe
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\ActiveMqConsumerDemo.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.Form1.resources
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.Properties.Resources.resources
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.csproj.GenerateResource.Cache
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.exe
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\ActiveMq.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.ActiveMQ.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.dll
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\ActiveMq.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.xml
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.ActiveMQ.pdb
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\bin\Debug\Apache.NMS.ActiveMQ.xml
+d:\users\wanglin36\ActiveMqBus\ActiveMqConsumerDemo\obj\Debug\ActiveMqConsumerDemo.csprojResolveAssemblyReference.cache

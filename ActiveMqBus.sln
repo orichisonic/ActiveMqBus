@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveMqBus", "ActiveMqBus\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveMq", "ActiveMq\ActiveMq.csproj", "{0E9C42C5-5F1A-4414-A807-B2BDC21B629E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveMqProducerDemo", "ActiveMqProducerDemo\ActiveMqProducerDemo.csproj", "{07455F3D-55C6-4413-8050-FA2B7C9BDC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveMqConsumerDemo", "ActiveMqConsumerDemo\ActiveMqConsumerDemo.csproj", "{1939E0BB-424C-4FF0-8A47-D3E432227E4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0E9C42C5-5F1A-4414-A807-B2BDC21B629E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E9C42C5-5F1A-4414-A807-B2BDC21B629E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E9C42C5-5F1A-4414-A807-B2BDC21B629E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07455F3D-55C6-4413-8050-FA2B7C9BDC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07455F3D-55C6-4413-8050-FA2B7C9BDC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07455F3D-55C6-4413-8050-FA2B7C9BDC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07455F3D-55C6-4413-8050-FA2B7C9BDC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1939E0BB-424C-4FF0-8A47-D3E432227E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1939E0BB-424C-4FF0-8A47-D3E432227E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1939E0BB-424C-4FF0-8A47-D3E432227E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1939E0BB-424C-4FF0-8A47-D3E432227E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

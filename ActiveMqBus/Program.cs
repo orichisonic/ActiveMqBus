@@ -22,6 +22,8 @@ namespace ActiveMqBus
             ProducerSendMessage();
             ConsumerRun();
             ConsumerReceiveMessage();
+            Console.Read();
+            ProducerSendMessage();
         }
 
         private static void ProducerRun()
@@ -31,6 +33,7 @@ namespace ActiveMqBus
             activeMqProducter.username = "admin";
             activeMqProducter.password = "admin";
             activeMqProducter.Start();
+         
 
         }
 
@@ -58,8 +61,9 @@ namespace ActiveMqBus
 
         private static void ConsumerReceiveMessage()
         {
-            activeMqConsumer.CreateConsumer(TopicType.Topic, "ActiveMq test", "Filter=test");
-            //m_consumer.Listener += new MessageListener(new activeMqConsumer.consumer_listener());
+            m_consumer= activeMqConsumer.CreateConsumer(TopicType.Topic, "ActiveMq test", "Filter='test'");
+          
+            m_consumer.Listener += new MessageListener(activeMqConsumer.consumer_listener);
         }
     }
 }
